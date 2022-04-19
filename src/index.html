@@ -9,11 +9,19 @@
 <body>
 
 	<div class="site-container">
-		@@include('html/header.html', {})
-		<main></main>
+		@@include('html/sidebar.html', {})
+		<main>
+			@@include('html/intro.html', {})
+			@@include('html/benefits.html', {})
+			@@include('html/category.html', {})
+			@@include('html/popular.html', {})
+		</main>
 		@@include('html/footer.html', {})
 	</div>
 
+
+
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="js/app.min.js"></script>
 
 </body>

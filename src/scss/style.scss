@@ -8,15 +8,15 @@
 
 
 
-body {
-	background-image: url('@img/cover.jpg');
-	@include bg-cover;
-}
-
-
 
 //-----components-----
-@import 'components/header';
+@import 'components/sidebar';
+@import 'components/nav';
+@import 'components/intro';
+@import 'components/slider';
+@import 'components/benefits';
+@import 'components/category';
+@import 'components/popular';
 // @import 'components/burger';
 
 @import 'components/footer';

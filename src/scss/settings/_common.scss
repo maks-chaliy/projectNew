@@ -1,4 +1,3 @@
-
 .site-container {
 	min-height: 100vh;
 	display: flex;
@@ -27,32 +26,49 @@
 }
 
 .btn-reset {
-  border: none;
-  padding: 0;
-  background: transparent;
-  cursor: pointer;
+	border: none;
+	outline: none;
+	padding: 0;
+	background: transparent;
+	cursor: pointer;
 }
 
 .list-reset {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .input-reset {
-  -webkit-appearance: none;
-  appearance: none;
-  border: none;
-  border-radius: 0;
-  background-color: #fff;
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	border-radius: 0;
+	background-color: #fff;
 
-  &::-webkit-search-decoration,
-  &::-webkit-search-cancel-button,
-  &::-webkit-search-results-button,
-  &::-webkit-search-results-decoration {
-    display: none;
-  }
+	&::-webkit-search-decoration,
+	&::-webkit-search-cancel-button,
+	&::-webkit-search-results-button,
+	&::-webkit-search-results-decoration {
+		display: none;
+	}
 }
+
+.section-vertical-offset {
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+	@include tablet {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	@include mobile {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+}
+
 
 //- стили для scrollbar
 //- по умолчанию для всего сайта
