@@ -1,0 +1,51 @@
+//=============/=============/=============
+.menu {
+	position: relative;
+	margin-bottom: var(--indent-huge);
+
+	&::after {
+		content: "";
+		position: absolute;
+		display: block;
+		left: 0;
+		bottom: var(--indent-average-back);
+		width: 70%;
+		height: 2px;
+		background-color: var(--pumpkin-color);
+	}
+
+	&__item {
+		padding: var(--indent-small) 0;
+		transition: color 0.3s, transform 0.3s linear;
+
+		&:hover {
+			.menu__name {
+				color: var(--pumpkin-color);
+				transform: scaleY(1.8);
+			}
+
+			.menu__icon {
+				fill: var(--pumpkin-color);
+				transform: scaleY(1.8);
+			}
+		}
+	}
+
+	&__link {
+		@include flex-h-center;
+	}
+
+	&__icon {
+		width: 26px;
+		height: 26px;
+		margin-right: var(--indent-average);
+		fill: var(--white-color);
+		transition: color 0.3s, transform 0.3s linear;
+	}
+
+	&__name {
+		color: var(--white-color);
+		font-weight: 700;
+		transition: color 0.3s, transform 0.3s linear;
+	}
+}
