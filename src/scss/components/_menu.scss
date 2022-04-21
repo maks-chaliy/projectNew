@@ -1,19 +1,5 @@
 //=============/=============/=============
 .menu {
-	position: relative;
-	margin-bottom: var(--indent-huge);
-
-	&::after {
-		content: "";
-		position: absolute;
-		display: block;
-		left: 0;
-		bottom: var(--indent-average-back);
-		width: 70%;
-		height: 2px;
-		background-color: var(--pumpkin-color);
-	}
-
 	&__item {
 		padding: var(--indent-small) 0;
 		transition: color 0.3s, transform 0.3s linear;
@@ -38,7 +24,7 @@
 	&__icon {
 		width: 26px;
 		height: 26px;
-		margin-right: var(--indent-average);
+		margin-right: var(--indent-middle);
 		fill: var(--white-color);
 		transition: color 0.3s, transform 0.3s linear;
 	}

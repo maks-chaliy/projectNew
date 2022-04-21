@@ -9,12 +9,12 @@ body {
 	font-weight: 400;
 	font-size: 18px;
 	background-color: var(--outerSpace-color);
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 8%;
+	padding-right: 8%;
 
 	@include laptop-max {
-		padding-left: 8%;
-		padding-right: 8%;
+		padding-left: var(--indent-small);
+		padding-right: var(--indent-small);
 	}
 }
 

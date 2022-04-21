@@ -7,15 +7,14 @@
 		display: inline-block;
 		@include flex-all-center;
 		width: 50%;
-		padding: 20px 0;
+		padding: var(--indent-average) 0;
 		min-height: 140px;
-		border: 1px solid rgba(255,255,255, 0.5);
-		box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.6), inset 2px 2px 5px rgba(255, 255, 255, 0.25),
-		8px 15px 15px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(0, 0, 0, 0.3);
-		border-radius: 8px;
+		border: var(--block-border);
+		box-shadow: var(--block-shadow);
+		border-radius: var(--block-radius);
 
 		&:not(:Last-child){
-			margin-right: 20px;
+			margin-right: var(--indent-average);
 		}
 	}
 

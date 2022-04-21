@@ -1,50 +1,65 @@
 //=============/=============/=============
-.logo {	
-	position: relative;
-	margin-top: var(--indent-average);
-	margin-bottom: var(--indent-huge);
+.logo {
 	color: var(--white-color);
 	text-transform: uppercase;
 	font-size: 52px;
-
-	&::after {
-		content: "";
-		position: absolute;
-		display: block;
-		left: 0;
-		bottom: var(--indent-average-back);
-		width: 70%;
-		height: 2px;
-		background-color: var(--pumpkin-color);
-	}
 }
 
 //=============/=============/=============
 .nav {
-	position: relative;
-	width: 100%;
+	padding: 0 var(--indent-small);
+	position: fixed;
+	top: 0;
+	left: 8%;
+	height: 100vh;
+	width: 380px;
+	z-index: 100;
 	@include flex-column;
-	margin-bottom: var(--indent-huge);
+	background-color: rgba(0, 0, 0, 0.5);
+	border: var(--block-border);
+	box-shadow: var(--block-shadow);
+	border-radius: var(--block-radius);
+	overflow-y: auto;
 
-	&::after {
-		content: "";
-		position: absolute;
-		display: block;
-		left: 0;
-		bottom: var(--indent-average-back);
-		width: 70%;
-		height: 2px;
-		background-color: var(--pumpkin-color);
+	&::-webkit-scrollbar {
+		width: 0;
+	}
+
+	@include laptop-max {
+		left: var(--indent-small);
+	}
+
+	&__top,
+	&__middle,
+	&__bottom {
+		position: relative;
+		margin-top: var(--indent-middle);
+		margin-bottom: var(--indent-huge);
+
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+			left: 0;
+			bottom: var(--indent-middle-back);
+			width: 70%;
+			height: 2px;
+			background-color: var(--pumpkin-color);
+		}
+	}
+
+	&__item:hover {
+		.nav__title {
+			color: var(--pumpkin-color);
+			transform: scaleY(1.8);
+		}
 	}
 
 	&__header {
 		position: relative;
 		padding: var(--indent-small) 0;
-		
-
 		width: 100%;
-		display: flex;
-		align-items: center;
+		@include flex-h-center;
 
 		&::before,
 		&::after {
@@ -81,11 +96,6 @@
 		font-weight: 700;
 		position: relative;
 		transition: color 0.3s, transform 0.3s linear;
-
-		&:hover {
-			color: var(--pumpkin-color);
-			transform: scaleY(1.8);
-		}
 	}
 
 	&-open {
