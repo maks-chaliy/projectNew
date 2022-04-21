@@ -3,6 +3,10 @@
 	position: relative;
 	margin-left: 400px;
 
+	@include tablet-max {
+		margin-left: 0;
+	}
+
 	&__title {
 		font-size: 46px;
 		margin-bottom: var(--indent-large);

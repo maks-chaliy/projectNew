@@ -13,8 +13,8 @@ body {
 	padding-right: 8%;
 
 	@include laptop-max {
-		padding-left: var(--indent-small);
-		padding-right: var(--indent-small);
+		padding-left: var(--indent-minimum);
+		padding-right: var(--indent-minimum);
 	}
 }
 

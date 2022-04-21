@@ -1,4 +1,23 @@
-<nav class="nav">
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Главная</title>
+</head>
+
+<body>
+
+	<div class="site-container">
+		<button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+	<span class="burger__line"></span>
+</button>
+		<nav class="nav">
 
 	<div class="nav__top">
 		<a href="../index.html" class="header__logo logo">Logo</a>
@@ -167,3 +186,60 @@
 	</div>
 
 </nav>
+		<main>
+			<h2>Это страница корзины товаров</h2>
+
+
+			<section class="section-vertical-offset popular">
+	<h2 class="popular__title">Популярные товары</h2>
+	<div class="slider-popular">
+		<div class="slider-popular__btns">
+			<button class="btn-reset slider-popular__btn slider-popular__btn-prev">
+				<svg class="slider-popular__btn-icon">
+					<use xlink:href="img/svg/sprite.svg#arrow_left_long"></use>
+				</svg>
+			</button>
+			<button class="btn-reset slider-popular__btn slider-popular__btn-next">
+				<svg class="slider-popular__btn-icon">
+					<use xlink:href="img/svg/sprite.svg#arrow_right_long"></use>
+				</svg>
+			</button>
+		</div>
+		<div class="slider-popular__wrapper">
+
+			<div class="slider-popular__slide">
+				<picture class="slider-popular__image">
+					<source srcset="img/resep.webp" type="image/webp">
+					<img loading="lazy" src="img/resep.jpg" alt="фотография мебели">
+				</picture>
+			</div>
+
+			<div class="slider-popular__slide">
+				<picture class="slider-popular__image">
+					<source srcset="img/resep.webp" type="image/webp">
+					<img loading="lazy" src="img/resep.jpg" alt="фотография мебели">
+				</picture>
+			</div>
+
+			<div class="slider-popular__slide">
+				<picture class="slider-popular__image">
+					<source srcset="img/resep.webp" type="image/webp">
+					<img loading="lazy" src="img/resep.jpg" alt="фотография мебели">
+				</picture>
+			</div>
+
+		</div>
+	</div>
+</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+
+
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/app.min.js"></script>
+
+</body>
+
+</html>

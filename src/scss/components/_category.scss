@@ -10,26 +10,27 @@
 		"g g g g g h h h h h h h"
 		"i i i i i i i j j j j j";
 	grid-template-columns: repeat(12, 1fr);
-	gap: 20px;
+	gap: var(--indent-small);
 
-	// @include tablet-max {
-	// 	// grid-template-rows: repeat(5, 300px);
-	// 	grid-template-areas: "a a a a b b b b"
-	// 											"c c c c d d d d"
-	// 											"e e e e f f f f"
-	// 											"g g g g h h h h"
-	// 											"i i i i j j j j";
-	// }
+	@include tablet-max {
+		margin-left: 0;
+	}
 
-	// @include tablet {
-	// 	grid-template-rows: repeat(5, 200px);
-	// }
-
-	// @include mobile {
-	// 	gap: 10px;
-	// 	display: flex;
-	// 	flex-direction: column;
-	// }
+	@include mobile {
+		grid-template-areas:
+			"a a a a"
+			"b b b b"
+			"c c c c"
+			"d d d d"
+			"e e e e"
+			"f f f f"
+			"g g g g"
+			"h h h h"
+			"i i i i"
+			"j j j j";
+		grid-template-columns: repeat(4, 1fr);
+		gap: var(--indent-minimum);
+	}
 
 	&__item-chairs {
 		grid-area: a;
@@ -79,6 +80,10 @@
 		border-radius: var(--block-radius);
 		transition: all 0.3s linear;
 		overflow: hidden;
+
+		@include tablet {
+			height: 320px;
+		}
 
 		&:hover {
 			.category__image img {
