@@ -3,7 +3,7 @@
 
 
 @@include('html/head.html', {
-"title": "Главная"
+"title": "Каталог"
 })
 
 <body>
@@ -12,9 +12,8 @@
 		@@include('html/burger.html', {})
 		@@include('html/nav.html', {})
 		<main>
-			<h2>Это страница корзины товаров</h2>
-
-
+			
+			@@include('html/catalog-grid.html', {})
 			@@include('html/popular.html', {})
 		</main>
 		@@include('html/footer.html', {})

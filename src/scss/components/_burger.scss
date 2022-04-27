@@ -34,7 +34,7 @@
 		top: 50%;
 		width: 44px;
 		height: 2px;
-		background-color: var(--white-color);
+		background-color: var(--black-color);
 		transform: translateY(-8px) translateX(-50%);
 		transition: transform 0.3s linear;
 	}
@@ -46,7 +46,7 @@
 		top: 50%;
 		width: 44px;
 		height: 2px;
-		background-color: var(--white-color);
+		background-color: var(--black-color);
 		transform: translateY(8px) translateX(-50%);
 		transition: transform 0.3s, width 0.3s linear;
 	}
@@ -58,7 +58,7 @@
 		transform: translateX(-50%);
 		width: 24px;
 		height: 2px;
-		background-color: var(--white-color);
+		background-color: var(--black-color);
 		transition: all 0.3s linear;
 		transition: opacity 0.3s, swidth 0.3s linear;
 	}
