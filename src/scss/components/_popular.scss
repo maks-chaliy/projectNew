@@ -1,7 +1,7 @@
 //=============/=============/=============
 .popular {
 	position: relative;
-	margin-left: 400px;
+	margin-left: var(--offset-left);
 
 	@include tablet-max {
 		margin-left: 0;
@@ -9,6 +9,6 @@
 
 	&__title {
 		font-size: 46px;
-		margin-bottom: var(--indent-large);
+		margin-bottom: var(--offset-large);
 	}
 }

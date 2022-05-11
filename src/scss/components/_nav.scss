@@ -7,15 +7,16 @@
 
 //=============/=============/=============
 .nav {
-	padding: 0 var(--indent-minimum);
+	padding: var(--offset-minimum);
 	position: fixed;
 	top: 0;
 	left: 8%;
 	height: 100vh;
-	width: 380px;
+	width: 340px;
+	white-space: nowrap;
 	z-index: 100;
 	@include flex-column;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.3);
 	border: var(--block-border);
 	box-shadow: var(--block-shadow);
 	border-radius: var(--block-radius);
@@ -27,7 +28,7 @@
 	}
 
 	@include laptop-max {
-		left: var(--indent-minimum);
+		left: var(--offset-minimum);
 	}
 
 	@include tablet-max {
@@ -42,25 +43,25 @@
 	&__middle,
 	&__bottom {
 		position: relative;
-		margin-bottom: var(--indent-huge);
+		margin-bottom: var(--offset-huge);
 
 		&::after {
 			content: "";
 			position: absolute;
 			display: block;
 			left: 0;
-			bottom: var(--indent-small-back);
+			bottom: var(--offset-small-back);
 			width: 60%;
 			height: 2px;
 			background-color: var(--pumpkin-color);
 
 			@include tablet {
-				bottom: var(--indent-minimum-back);
+				bottom: var(--offset-minimum-back);
 			}
 		}
 
 		@include tablet {
-			margin-bottom: var(--indent-large);
+			margin-bottom: var(--offset-large);
 		}
 	}
 
@@ -75,7 +76,7 @@
 
 	&__header {
 		position: relative;
-		padding: var(--indent-minimum) 0;
+		padding: var(--offset-minimum) 0;
 		width: 100%;
 		@include flex-h-center;
 
@@ -93,12 +94,12 @@
 
 		&::before {
 			transform: rotate(-30deg);
-			right: 15px;
+			right: 0;
 		}
 
 		&::after {
 			transform: rotate(30deg);
-			right: 23px;
+			right: 8px;
 		}
 
 		&:hover {
@@ -117,11 +118,11 @@
 		transition: color 0.3s, transform 0.3s linear;
 
 		@include mobile {
-			font-size: 17px;
+			font-size: 15px;
 		}
 
 		@include mobile-min {
-			font-size: 15px;
+			font-size: 12px;
 		}
 	}
 }
@@ -156,12 +157,12 @@
 	transition: all 0.25s ease;
 
 	&__list {
-		padding: var(--indent-minimum);
+		padding: var(--offset-minimum);
 	}
 
 	&__link {
 		width: 100%;
-		padding: var(--indent-minimum) 0;
+		padding: var(--offset-minimum);
 		display: inline-block;
 		color: var(--white-color);
 		font-weight: 500;
@@ -169,11 +170,11 @@
 		transition: color 0.3s, transform 0.3s linear;
 
 		@include mobile {
-			font-size: 17px;
+			font-size: 15px;
 		}
 
 		@include mobile-min {
-			font-size: 15px;
+			font-size: 12px;
 		}
 
 		&:hover {

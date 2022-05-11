@@ -1,3 +1,13 @@
+//=============/=============/=============
+/*
+burger: z-index: 110;
+modal: z-index: 120;
+modal__btn_close: z-index: 123;
+slider-popular__btns: z-index: 2;
+slider-productModal__btn: z-index: 122;
+*/
+
+//=============/=============/=============
 .site-container {
 	min-height: 100vh;
 	display: flex;
@@ -55,17 +65,17 @@
 }
 
 .section-vertical-offset {
-	margin-top: var(--indent-maximum);
-	margin-bottom: var(--indent-maximum);
+	margin-top: var(--offset-maximum);
+	margin-bottom: var(--offset-maximum);
 
 	@include tablet {
-		margin-top: var(--indent-huge);
-		margin-bottom: var(--indent-huge);
+		margin-top: var(--offset-huge);
+		margin-bottom: var(--offset-huge);
 	}
 
 	@include mobile {
-		margin-top: var(--indent-large);
-		margin-bottom: var(--indent-large);
+		margin-top: var(--offset-large);
+		margin-bottom: var(--offset-large);
 	}
 }
 

@@ -7,8 +7,8 @@
 .burger {
 	position: fixed;
 	z-index: 110;
-	right: var(--indent-huge);
-	top: var(--indent-small);
+	right: var(--offset-huge);
+	top: var(--offset-small);
 	z-index: 110;
 	width: 84px;
 	height: 44px;
@@ -24,7 +24,7 @@
 	}
 
 	@include mobile {
-		right: var(--indent-small);
+		right: var(--offset-small);
 	}
 
 	&::before {

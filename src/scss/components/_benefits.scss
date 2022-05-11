@@ -1,6 +1,6 @@
 //=============/=============/=============
 .benefit {
-	margin-left: 400px;
+	margin-left: var(--offset-left);
 	@include flex;
 
 	@include tablet-max {
@@ -15,7 +15,7 @@
 		display: inline-block;
 		@include flex-all-center;
 		width: 50%;
-		padding: var(--indent-small) 0;
+		padding: var(--offset-small) 0;
 		min-height: 140px;
 		border: var(--block-border);
 		box-shadow: var(--block-shadow);
@@ -26,11 +26,11 @@
 		}
 
 		&:not(:last-child) {
-			margin-right: var(--indent-small);
+			margin-right: var(--offset-small);
 
 			@include mobile-min {
 				margin-right: 0;
-				margin-bottom: var(--indent-minimum);
+				margin-bottom: var(--offset-minimum);
 			}
 		}
 	}

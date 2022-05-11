@@ -1,6 +1,6 @@
 //=============/=============/=============
 .category {
-	margin-left: 400px;
+	margin-left: var(--offset-left);
 
 	display: grid;
 	grid-template-areas:
@@ -10,7 +10,7 @@
 		"g g g g g h h h h h h h"
 		"i i i i i i i j j j j j";
 	grid-template-columns: repeat(12, 1fr);
-	gap: var(--indent-small);
+	gap: var(--offset-small);
 
 	@include tablet-max {
 		margin-left: 0;
@@ -29,7 +29,7 @@
 			"i i i i"
 			"j j j j";
 		grid-template-columns: repeat(4, 1fr);
-		gap: var(--indent-minimum);
+		gap: var(--offset-minimum);
 	}
 
 	&__item-chairs {
@@ -132,8 +132,8 @@
 
 	&__content {
 		position: absolute;
-		left: var(--indent-large);
-		top: var(--indent-large);
+		left: var(--offset-large);
+		top: var(--offset-large);
 	}
 
 	&__name {

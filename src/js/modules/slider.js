@@ -1,3 +1,4 @@
+//=============/=============/=============/=============/=============
 const $slider = document.querySelector('.slider');
 
 let slider = new Swiper($slider, {
@@ -15,6 +16,7 @@ let slider = new Swiper($slider, {
 });
 
 
+//=============/=============/=============/=============/=============
 const $sliderPopular = document.querySelector('.slider-popular');
 
 let sliderPopular = new Swiper($sliderPopular, {
@@ -39,7 +41,27 @@ let sliderPopular = new Swiper($sliderPopular, {
 		}
 	},
 	navigation: {
-	nextEl: '.slider-popular__btn-next',
-	prevEl: '.slider-popular__btn-prev',
-},
+		nextEl: '.slider-popular__btn-next',
+		prevEl: '.slider-popular__btn-prev',
+	},
 });
+
+
+//=============/=============/=============/=============/=============
+const $sliderProductModal = document.querySelectorAll('.slider-productModal');
+
+$sliderProductModal.forEach((el) => {
+	let sliderProductModal = new Swiper(el, {
+		slideClass: 'slider-productModal__slide',
+		wrapperClass: 'slider-productModal__wrapper',
+		loop: true,
+		slidesPerView: 1,
+		navigation: {
+			nextEl: el.querySelector('.slider-productModal__btn-next'),
+			prevEl: el.querySelector('.slider-productModal__btn-prev'),
+		},
+	});
+})
+
+
+//=============/=============/=============/=============/=============

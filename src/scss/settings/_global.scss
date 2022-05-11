@@ -7,14 +7,14 @@
 body {
 	font-family: "OpenSans", sans-serif;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 16px;
 	background-color: var(--outerSpace-color);
-	padding-left: 8%;
-	padding-right: 8%;
+	margin-left: 8%;
+	margin-right: 8%;
 
 	@include laptop-max {
-		padding-left: var(--indent-minimum);
-		padding-right: var(--indent-minimum);
+		margin-left: var(--offset-minimum);
+		margin-right: var(--offset-minimum);
 	}
 }
 

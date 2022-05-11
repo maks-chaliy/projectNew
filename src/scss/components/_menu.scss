@@ -1,7 +1,7 @@
 //=============/=============/=============
 .menu {
 	&__item {
-		padding: var(--indent-minimum) 0;
+		padding: var(--offset-minimum) 0;
 		transition: color 0.3s, transform 0.3s linear;
 
 		&:hover {
@@ -24,7 +24,7 @@
 	&__icon {
 		width: 26px;
 		height: 26px;
-		margin-right: var(--indent-small);
+		margin-right: var(--offset-small);
 		fill: var(--white-color);
 		transition: color 0.3s, transform 0.3s linear;
 	}

@@ -1,7 +1,7 @@
 .product {
 	grid-column: 4 span;
 	border: 1px solid var(--black-color);
-	padding: var(--indent-small);
+	padding: var(--offset-small);
 
 	@include laptop {
 		grid-column: 6 span;
@@ -16,7 +16,7 @@
 	}
 
 	@include mobile {
-		padding: var(--indent-minimum);
+		padding: var(--offset-minimum);
 	}
 
 	@include mobile-min {
@@ -34,14 +34,19 @@
 		}
 	}
 
+	&__img {
+		height: 100%;
+		width: 100%;
+	}
+
 	&__content {
 		@include flex-column;
-		padding-top: var(--indent-middle);
+		padding-top: var(--offset-small);
 		color: var(--white-color);
 	}
 
 	&__title {
-		margin-bottom: var(--indent-minimum);
+		margin-bottom: var(--offset-minimum);
 	}
 }
 
@@ -96,7 +101,7 @@
 
 //=============/=============/=============
 .image-pagination {
-	padding-top: var(--indent-minimum);
+	padding-top: var(--offset-minimum);
 	display: flex;
 	justify-content: center;
 
